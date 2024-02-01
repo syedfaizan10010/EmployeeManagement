@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LQUWc2ZiFIMZzp/NpG+O00v3YLH8nKec3duWubNDsU4=",
+  "Hash": "nsPtI8uPLPY9Wy6ZEOpafd+fvHX01G9HO9IgOKE5xzc=",
   "Source": "EmployeeManagement",
   "BasePath": "_content/EmployeeManagement",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\New\\EmployeeManagement\\wwwroot\\js\\Employee\\Emp.js",
+      "SourceId": "EmployeeManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New\\EmployeeManagement\\wwwroot\\",
+      "BasePath": "_content/EmployeeManagement",
+      "RelativePath": "js/Employee/Emp.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Employee\\Emp.js"
     },
     {
       "Identity": "D:\\New\\EmployeeManagement\\wwwroot\\js\\site.js",

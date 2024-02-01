@@ -22,9 +22,9 @@ public class EmployeeDetailFactory :IEmployeeDetailFactory
         await _employeeService.AddEmployeeAsync(postModel);
     }
 
-    public Task DeleteEmp(int id)
+    public async Task DeleteEmp(int id)
     {
-        throw new NotImplementedException();
+        await _employeeService.DeleteEmployeeAsync(id);
     }
 
     public async Task<List<EmployeeDetailVM>> GetAllEmployees()

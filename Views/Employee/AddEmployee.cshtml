@@ -1,0 +1,26 @@
+@using ViewModels;
+@using EmployeeManagement;
+@model EmployeeDetailVM;
+<form asp-action="SaveEmployee" asp-controller="Employee" method="post" class="mt-3">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Salary" class="form-label">Salary</label>
+        <input asp-for="Salary" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Designation" class="form-label">Designation</label>
+        <input asp-for="Designation" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Experience" class="form-label">Experience</label>
+        <textarea asp-for="Experience" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

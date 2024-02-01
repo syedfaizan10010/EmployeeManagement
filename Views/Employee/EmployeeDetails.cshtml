@@ -9,35 +9,43 @@
 <body>
     <h2>Employee List</h2>
 
-    @if (Model != null && Model.Any())
-    {
-        <table>
-            <thead>
+   @if (Model != null && Model.Any())
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Employmnet ID</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <th>Experience</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
                 <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Designation</th>
-                    <th>Salary</th>
-                    <th>Experience</th>
+                    <td id="empId">@employee.Id</td>
+                    <td id="empName">@employee.Name</td>
+                    <td id="empDesignation">@employee.Designation</td>
+                    <td id="empSalary">@employee.Salary</td>
+                    <td id="empExperience">@employee.Experience</td>
+                    <td>
+                        <button class="btn btn-danger" id="deleteBtn" onclick="DeleteEmployeeRecord(@employee.Id)">Delete</button>
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var employee in Model)
-                {
-                    <tr>
-                        <td>@employee.Id</td>
-                        <td>@employee.Name</td>
-                        <td>@employee.Designation</td>
-                        <td>@employee.Salary</td>
-                        <td>@employee.Experience</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <p>No employees found.</p>
-    }
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No employees found.</p>
+}
 </body>
 </html>
+
+@section Scripts{
+<script src="~/js/Employee/Emp.js"></script>
+}

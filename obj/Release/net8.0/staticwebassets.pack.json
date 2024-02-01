@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\New\\EmployeeManagement\\wwwroot\\js\\Employee\\Emp.js",
+      "PackagePath": "staticwebassets\\js\\Employee\\Emp.js"
+    },
+    {
       "Id": "D:\\New\\EmployeeManagement\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
