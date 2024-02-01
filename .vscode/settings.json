@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4145c314-b916-4daf-bf23-b9a48e61cc1b/resourceGroups/DefaultResourceGroup-null/providers/Microsoft.Web/sites/EmpEmpower",
+    "appService.deploySubpath": "bin\\Publish"
+}
