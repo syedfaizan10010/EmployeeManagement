@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New\\EmployeeManagement\\EmployeeManagement.csproj": {}
+    "D:\\New\\EmployeeManagement\\CosmosDb\\CosmosLibrary\\CosmosLibrary.csproj": {}
   },
   "projects": {
-    "D:\\New\\EmployeeManagement\\EmployeeManagement.csproj": {
+    "D:\\New\\EmployeeManagement\\CosmosDb\\CosmosLibrary\\CosmosLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New\\EmployeeManagement\\EmployeeManagement.csproj",
-        "projectName": "EmployeeManagement",
-        "projectPath": "D:\\New\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectUniqueName": "D:\\New\\EmployeeManagement\\CosmosDb\\CosmosLibrary\\CosmosLibrary.csproj",
+        "projectName": "CosmosLibrary",
+        "projectPath": "D:\\New\\EmployeeManagement\\CosmosDb\\CosmosLibrary\\CosmosLibrary.csproj",
         "packagesPath": "C:\\Users\\sfaizan.MAXIMUSIN.000\\.nuget\\packages\\",
-        "outputPath": "D:\\New\\EmployeeManagement\\obj\\",
+        "outputPath": "D:\\New\\EmployeeManagement\\CosmosDb\\CosmosLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sfaizan.MAXIMUSIN.000\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,26 +37,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Azure.Functions.Worker.Extensions.CosmosDB": {
-              "target": "Package",
-              "version": "[4.6.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -69,9 +49,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -35,4 +35,11 @@ public class EmployeeController : Controller
     {
         await _employeeDetailFactory.DeleteEmp(id);
     }
+       public async Task<IActionResult> AddEmployeeToCosmos(){
+        return View("~/Views/Employee/AddEmployeeToCosmos.cshtml"); 
+    }
+    public async Task<IActionResult> SaveEmployeeToCosmos(ViewModels.EmployeeDetailVM model){
+        await _employeeDetailFactory.AddNewEmpCosmos(model);
+        return await GetAllEmployeeDetails();
+    }
 }

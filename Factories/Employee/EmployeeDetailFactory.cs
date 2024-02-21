@@ -1,3 +1,4 @@
+using CosmosLibrary;
 using EmployeeEntityModel;
 using ViewModels;
 
@@ -5,9 +6,11 @@ namespace EmployeeManagement;
 public class EmployeeDetailFactory :IEmployeeDetailFactory
 {
     private readonly  IEmployeeService _employeeService; 
-    public EmployeeDetailFactory(IEmployeeService employeeService)
+    private readonly IEmployeeServiceCosmos _empServiceCosmos;
+    public EmployeeDetailFactory(IEmployeeService employeeService, IEmployeeServiceCosmos empServiceCosmos)
     {
        _employeeService = employeeService;   
+       _empServiceCosmos = empServiceCosmos;
     }
 
     public async Task AddNewEmp(EmployeeDetailVM employee)
@@ -20,6 +23,20 @@ public class EmployeeDetailFactory :IEmployeeDetailFactory
             Experience = employee.Experience
         };
         await _employeeService.AddEmployeeAsync(postModel);
+    }
+
+    public async Task<string> AddNewEmpCosmos(EmployeeDetailVM employee)
+    {
+        var postModel = new Model{
+            id = Guid.NewGuid().ToString(),
+            Id = employee.Id,
+            Salary = employee.Salary,
+            Designation = employee.Designation,
+            Name = employee.Name,
+            Experience = employee.Experience
+        };
+       var result = await _empServiceCosmos.AddEmployeeAsync(postModel);
+       return result;
     }
 
     public async Task DeleteEmp(int id)

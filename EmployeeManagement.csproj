@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.CosmosDB" Version="4.6.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
@@ -15,9 +16,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-  <ProjectReference Include="..\EmployeeData\EmployeeData.csproj"/>
-  <ProjectReference Include="..\EmployeeEntity\EmployeeEntity.csproj"/> 
-    <ProjectReference Include="..\EmployeeService\EmployeeService.csproj"/> 
+  <ProjectReference Include="..\EmployeeData\EmployeeData.csproj" />
+  <ProjectReference Include="..\EmployeeEntity\EmployeeEntity.csproj" /> 
+    <ProjectReference Include="..\EmployeeService\EmployeeService.csproj" /> 
 
  </ItemGroup>
 </Project>
