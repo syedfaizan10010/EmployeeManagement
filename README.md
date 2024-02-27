@@ -1,10 +1,12 @@
 Employee Management Project using dotNet 8.0
-.Net SDK -> https://dotnet.microsoft.com/en-us/download/dotnet/8.0
-Packages needs to be installed:
-EntityFramework -> dotnet add package Microsoft.EntityFrameworkCore --version 8.0.1 //Version can be specified based on latest available
-EntityFramework Tool -> dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.1 //Version can be specified based on latest available
-EntityFramework Sql Server -> dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 8.0.1 //Version can be specified based on latest available
+This is a comprehensive Employee Management System developed using .NET, Entity Framework, and deployed on Azure App Service with a SQL database backend.
 
-Replace Connection string in appSettings.Json:
-    "connMSSQL": "Server=.;Database=DotnetCRUD;Trusted_Connection=True;TrustServerCertificate=True;"
-Use your own Server name in place of .
+Technologies Used
+Backend: .NET 
+Database: Azure SQL Server
+ORM: Entity Framework
+Frontend: HTML, CSS, JavaScript
+Deployment: Azure App Service
+
+Deployment
+The application is deployed on Azure App Service. Ensure proper configuration of deployment settings within Azure portal or directly from Visual Studio/ VS code.
