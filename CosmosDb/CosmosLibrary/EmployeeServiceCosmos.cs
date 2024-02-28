@@ -22,12 +22,19 @@ public class EmployeeServiceCosmos : IEmployeeServiceCosmos
     public CosmosDbConfiguration GetConfiguration(){
         var builder = WebApplication.CreateBuilder();
         builder.Configuration.AddEnvironmentVariables();
-        CosmosDbConfiguration configuration = new CosmosDbConfiguration{
-            URI = _configuration.GetValue<string>("CosmosDbConfiguration:cosmosDbUri"),
-            Key = _configuration.GetValue<string>("CosmosDbConfiguration:cosmosDbKey"),
-            dbName = _configuration.GetValue<string>("CosmosDbConfiguration:dbName"),
-            ContainerName = _configuration.GetValue<string>("CosmosDbConfiguration:containerName")
+        // CosmosDbConfiguration configuration = new CosmosDbConfiguration{
+        //     URI = _configuration.GetValue<string>("CosmosDbConfiguration:cosmosDbUri"),
+        //     Key = _configuration.GetValue<string>("CosmosDbConfiguration:cosmosDbKey"),
+        //     dbName = _configuration.GetValue<string>("CosmosDbConfiguration:dbName"),
+        //     ContainerName = _configuration.GetValue<string>("CosmosDbConfiguration:containerName")
+        // };
+           CosmosDbConfiguration configuration = new CosmosDbConfiguration{
+            URI = _configuration["CosmosDbConfiguration:cosmosDbUri"],
+            Key = _configuration["CosmosDbConfiguration:cosmosDbKey"],
+            dbName = _configuration["CosmosDbConfiguration:dbName"],
+            ContainerName = _configuration["CosmosDbConfiguration:containerName"]
         };
+
         return configuration;
     }
     
